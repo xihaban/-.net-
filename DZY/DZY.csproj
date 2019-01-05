@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4FD3F039-0AEC-4ECA-9FD1-38C75B9EBA16}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DZY</RootNamespace>
+    <AssemblyName>DZY</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>2</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cChajin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cChajin.Designer.cs">
+      <DependentUpon>cChajin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cIndex.Designer.cs">
+      <DependentUpon>cIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cMaicha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cMaicha.Designer.cs">
+      <DependentUpon>cMaicha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cKucun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cKucun.Designer.cs">
+      <DependentUpon>cKucun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xsglDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>xsglDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="getGongsi.cs" />
+    <Compile Include="getZhigong.cs" />
+    <Compile Include="getJinhuo.cs" />
+    <Compile Include="getKucun.cs" />
+    <Compile Include="getMaihuo.cs" />
+    <Compile Include="getSqlConnection.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="cGongying.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cGongying.Designer.cs">
+      <DependentUpon>cGongying.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cZhigong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cZhigong.Designer.cs">
+      <DependentUpon>cZhigong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cJinhuo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cJinhuo.Designer.cs">
+      <DependentUpon>cJinhuo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cChaku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cChaku.Designer.cs">
+      <DependentUpon>cChaku.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cMaihuo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cMaihuo.Designer.cs">
+      <DependentUpon>cMaihuo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDenglu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cDenglu.designer.cs">
+      <DependentUpon>cDenglu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="wGongsi.cs" />
+    <Compile Include="wZhigong.cs" />
+    <Compile Include="wJinhuo.cs" />
+    <Compile Include="wKucun.cs" />
+    <Compile Include="wMaihuo.cs" />
+    <EmbeddedResource Include="cChajin.resx">
+      <DependentUpon>cChajin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cIndex.resx">
+      <DependentUpon>cIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cMaicha.resx">
+      <DependentUpon>cMaicha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cKucun.resx">
+      <DependentUpon>cKucun.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cGongying.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cGongying.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cZhigong.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cZhigong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cJinhuo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cJinhuo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cChaku.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cChaku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cMaihuo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>cMaihuo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cDenglu.resx">
+      <DependentUpon>cDenglu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="xsglDataSet.xsc">
+      <DependentUpon>xsglDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="xsglDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>xsglDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsglDataSet.xss">
+      <DependentUpon>xsglDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
